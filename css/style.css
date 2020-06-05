@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.banner{
+    background-image: url(../img/IMG_4589.png);
+    background-size: cover; 
+    background-position: center;
+    height: 900px;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-repeat: no-repeat;
+}
+
+.banner__conteudo{
+    text-align: center;
+}
+
+.banner__titulo{
+font-size: 80px;
+}
+
+.banner__subtitulo{
+    font-size: 45px;
+}
+
+.banner__link{
+    text-decoration: none;
+    color:#80469d;
+    background-color: white;
+    opacity: 0.5;
+    padding: 10px 15px;
+    border-radius: 30px; 
+    text-transform: uppercase;
+    border-style: ridge;
+    border-color:#80469d ;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center ;
+    font-size: larger;
+    
+
+}
+
+.banner__link:hover {
+    background-color: whitesmoke ;
+    opacity: 0.5;
+  
+}
+
+.sobre{
+    padding: 50px;
+}
+
+.sobre__titulo{
+    color: rgb(129, 123, 129);
+    font-size: 55px;
+}
+
+.sobre__conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.sobre__descricao{
+    width: 50%; 
+    line-height: 30px;
+    font-size: 28px;       
+}
+
+.sobre__habilidades{
+    width: 50%;  
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px; 
+}
+
+.titulo_habilidades{
+font-size: 35px;
+color: rgb(129, 123, 129);
+}
+
+
+.footer {
+    margin: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+  
+.redes-sociais{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+  * .redes-sociais__link {
+    margin: 20px;
+    background-color: #80469d;
+    color: white;
+    text-decoration: none;
+    text-align:center;
+    padding: 10px 20px;
+    width: 150px;
+    margin: 20px;
+  }
+   
+  * .redes-sociais__link:hover {
+    opacity: 0.5;
+  } 
+  
+  * .redes-sociais__link img {
+    padding-top: 15px;
+    width: auto;
+    height: 70px;
+  } 
+
+  @media(max-width: 768px){
+    .sobre__conteudo{
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre__descricao{
+       width: 100%;    
+   }
+
+   .sobre__habilidades{
+       width: 100%;
+   }
+} 
